@@ -10,7 +10,7 @@ pipeline{
         stage('codecompile with akshat'){
             steps{
                 echo 'starting compiling'
-                sh 'mvn compile'
+                sh './mvnw compile'
             }
         }
         stage('codetesting with akshat'){
