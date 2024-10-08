@@ -10,6 +10,7 @@ pipeline{
         stage('codecompile with akshat'){
             steps{
                 echo 'starting compiling'
+                sh 'chmod +x ./mvnw'
                 sh './mvnw compile'
             }
         }
